@@ -18,87 +18,87 @@
      <!-- Slideshow CSS !-->
     <link rel="stylesheet" type="text/css" href="../css/tcpc_index.css">
     <style>
-        .navbar 
-        {
-            height: 152px;
-            background-color: #2C1855; 
-        }
         .nav_logo
         {
             height: 120px;
             width: 250px;
-            margin-left: 120px;
+            
+        }
+        #background
+        {
+            height: 190px;
+            background-color: #1e2b69;
+        }
+        .navbar-header
+        {
+            height: 150px;
+        }
+        #navbar_mobile
+        {
+            left: 20px;
+            margin-top: 40px;
+            background-color: #1e2b69;
+        }
+        button.navbar-toggle.collapsed
+        {
+            margin-left: 20px;
         }
         .navbar-default .navbar-nav>li>a
         {
             color: white;
         }
-        .navbar ul
-        {
-            margin-top: 150px;
-            margin-right: 150px;
-
-        }
-        .navbar li 
-        {
-            color: white;
-            left: 50px;
-            right: 50px;
-            bottom: 85px;
-            padding-right: 20px;
-        }
-        .navbar a 
-        {
-            color:white;
-            font-size: 17px;
-        }
-        nav.navbar.navbar-default.navbar-fixed-top
-        {
-            height: 150px;
-        }
-        nav.navbar.navbar-default.navbar-static-top
-        {
-            margin-bottom: 0px;
-        }
-        div.container-fluid.footer
-        {
-            width: 100%;
-            background-color: #2C1855;
-            color: white;
-        }
-        ul.nav.nav-pills 
-        {
-            margin-left: 150px;
-        }
-        .container-fluid
-        {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
         body
         {
-            background-color: #A5A5A5
+            background-color: #A5A5A5;
         }
-        .content
+         .content
         {
-            margin-top: 200px;
+            margin-top: 250px;
+        }
+        .footer
+        {
+            bottom: 0;
+            width: 100%;
+            height:60px;
+            background-color:#1e2b69;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center
+        }
+        .email
+        {
+            text-decoration: none !important;
+            color: white;
+
         }
     </style>
 </head>
 <body>
-   <!--Top Navigation Bar that is fixed to the top-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class = "container-fluid">
-            <div class="navbar">
-                <a class = "navbar-brand"href="../views/tcpc_index.php">
-                    <img src="../img/mu_logo.png" alt="MU Logo Nav" class ="nav_logo">
-                </a>
-                <ul class = "nav navbar-nav">
-                    <li role = "presentation"><a href="../views/tcpc_index.php">HOME</a></li>
-                    <li role="presentation"><a href="../views/tcpc_aboutus.php">ABOUT US</a></li>
-                    <li role="presentation"><a href="../views/tcpc_staff.php">STAFF</a></li>
-                    <li role="presentation"><a href="../views/tcpc_resources.php">RESOURCES</a></li>
-                    <li role="presentation"><a href="../views/tcpc_events.php">EVENTS</a></li>
+   <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="background"class="container-fluid">
+            <a class = "navbar-brand"href="../views/tcpc_index.php">
+                <img src="../img/mu_logo.png" alt="MU Logo Nav" class ="nav_logo" height = "120px"
+            width = "250px">
+            </a>
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_mobile" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar_mobile">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="../views/tcpc_index2.php">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../views/tcpc_aboutus.php">ABOUT US</a></li>
+                    <li><a href="../views/tcpc_staff.php">STAFF</a></li>
+                    <li><a href="../views/tcpc_resources.php">RESOURCES</a></li>
+                    <li><a href="../views/tcpc_events.php">EVENTS</a></li>
                 </ul>
             </div>
         </div>
@@ -184,46 +184,55 @@
   <p> Sermon</p>
     </div>
 
-    <!--Footer of the Page-->
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid footer">
-            <ul class = "nav nav-pills">
-                <li>@2017 TCPC Martus United Youth Group | 8001 Pine St S, Lakewood, WA 98499 |</li>
-                <li>Email |</li>
-                <li>Instagram Icon |</li>
-                <li>Facebook Icon</li>
-            </ul>
+   <!--Footer of the Page-->
+    <footer class="footer">
+        <div class="container">
+            <p>@2017 TCPC Martus United Youth Group | 8001 Pine St S, Lakewood, WA 98499 | <a href="mailto:tcpcmuyg@gmail.com" class = "email"> Email </a> | Instagram | Facebook</p>
         </div>
-    </nav>
+    </footer>
 
     <!--Script for Slideshow!-->
-<script>
-    var slideIndex = 1;
-showSlides(slideIndex);
+    <script>
+        var slideIndex = 1;
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
-</script>
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+     <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/jquery.fittext.js"></script>
+    <script src="../js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/creative.js"></script>
 </body>
 </html>
