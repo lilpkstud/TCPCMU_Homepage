@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Extra small devices (portrait phones, less than 576px) 
+    Iphone 6
+*/
+@media (max-width: 575px) {
+    #position_left
+    {
+        max-width: 100% !important;
+        background-color;
+    }
+    #position_left h3
+    {
+        text-align: center; 
+    }
+    .weekly
+    {
+        text-align: center;
+    }
+    #position_right
+    {
+        max-width: 100% !important;
+    }
+    #position_right h3
+    {
+        text-align: center; 
+    }
+    .event_picture h2
+    {
+        text-align: center;
+    }
+    .event_title
+    {
+        text-align: initial !important;
+    }
+    .event_details p
+    {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+   img.slide1
+    {
+    max-width: 100% !important;
+    height: auto;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    #position_left
+    {
+        width: 100% !important;
+        background-color: pink;
+    }
+    #position_left h3
+    {
+        text-align: center; 
+    }
+    .weekly
+    {
+        text-align: center;
+    }
+    #position_right
+    {
+        max-width: 100% !important;
+    }
+    #position_right h3
+    {
+        text-align: center; 
+    }
+    .event_picture h2
+    {
+        text-align: center;
+    }
+    .event_title
+    {
+        text-align: initial !important;
+    }
+    .event_details p
+    {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    img.slide1
+    {
+    max-width: 100% !important;
+    height: auto;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #position_left
+    {
+        width: 100% !important;
+        background-color: pink; 
+    }
+    #position_left h3
+    {
+        text-align: center; 
+    }
+    .weekly
+    {
+        text-align: center;
+    }
+    #position_right
+    {
+        max-width: 100% !important;
+    }
+    #position_right h3
+    {
+        text-align: center; 
+    }
+    .event_picture h2
+    {
+        text-align: center;
+    }
+    .event_title
+    {
+        text-align: initial !important;
+    }
+    .event_details p
+    {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    img.slide1
+    {
+    max-width: 100% !important;
+    height: auto;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

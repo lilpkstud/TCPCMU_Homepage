@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.name
+{
+    text-align: center;
+}
+.position_right
+{
+    max-width: 56% !important;
+    float: right;
+}
+.pastor_james
+{
+    max-width: 40% !important;
+    height: auto;
+    display: inline;
+    /* height was 30% margin-right: 40px;*/
+}
+
+.info
+{
+   margin-top: 30px;
+   text-align: justify;
+   font-size: 15px;
+   letter-spacing: 1px;
+}
+.staff_photo
+{
+    width: 70%;
+}
+#youth_staff
+{
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color:;
+    margin-bottom: 50px;
+}
+.thumbnail
+{
+    margin-right: 15px;
+    background-color: #6D7993;
+}
+.staff_grade
+{
+    text-align: center;
+    font-weight: bolder;
+}
+.staff_name
+{
+    text-align: center;
+    font-weight: bolder;
+}
+.center
+{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.staff_picture
+{
+    height: 193px !important;
+    padding-bottom: 5px;
+}

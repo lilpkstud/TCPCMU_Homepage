@@ -1,0 +1,67 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#position_left
+{
+    float: left;
+    display: inline-block;
+    max-width: 50%;
+}
+#position_right
+{
+    float: right;
+    display: inline-block;
+    max-width: 50%;
+}
+.event
+{
+    display: inline-block;
+    background-color: 
+}
+.date
+{
+    padding-top: 25px;
+    padding-right: 25px;
+    float: left;
+    display: inline-block;
+}
+.date
+{
+    /*font-size: 3em;
+    line-height: 1em;
+    text-transform: uppercase;
+    border-top-width: 2px;
+    border-top-style: solid; 
+    background-color: red;
+}
+.month
+{
+    font-size: 1em;
+    line-height: 1em;
+}
+.day
+{
+    line-height: 1.3em; */
+    
+}
+.event_details
+{
+    margin-left: 20px;
+    background-color: 
+}
+.event_details p
+{
+    color: ;
+    width: 50%;
+    text-align: justify;
+    margin-left: 50px;
+}
+img.slide1
+{
+    max-width: 100%;
+    height: auto;
+}
